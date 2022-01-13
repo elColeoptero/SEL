@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/sel_poo</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">samsam</property>
+        <mapping class="entity.E_Categorie"/>
+        <mapping class="entity.E_Competence"/>
+        <mapping class="entity.E_Membre"/>
+        <mapping class="entity.E_Talent"/>
+    </session-factory>
+</hibernate-configuration>
